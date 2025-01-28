@@ -22,7 +22,7 @@ Identify the 2 exposed services on substation 434.
 ## Design
 Describe the design of the project. This can include architecture diagrams, flowcharts, and other design documents.
 ---
-External Network: 172.31.3.0/16 **SPECIAL NOTE:** The IP Range 172.31.3.0/16 is considered a public range
+External Network: 172.31.3.0/16 *SPECIAL NOTE:* The IP Range 172.31.3.0/16 is considered a public range
 ISP: 172.31.3.1
 ZAP-HQ: 172.31.3.5
 MY Workstation: 172.31.3.3
