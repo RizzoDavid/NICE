@@ -26,7 +26,9 @@ ZAP-HQ: 172.31.3.5
 MY Workstation: 172.31.3.3
 Backup: 172.31.3.4
 Substation 434: 172.31.3.2
+
 ---
+
 Internal Substation Network: 192.168.30.0/24
 pfSense: 192.168.30.254
 Historian: 192.168.30.77
@@ -41,9 +43,13 @@ Sensors & Equipment: 192.168.30.2
 
 ## Testing
 First I connected to Susbstation VPN in Windows Settings. After VPN connection was established, I then loaded up the camera Substation Camera. It is a basic HTTP website to view and control the camera. Then I loaded up the HMI controlled which is another basic HTTP site to control and moniotr stats. I then loaded up Historian remote desktop which hosts a OpenHistroian server and client. I then opened the OpenHistroian Console and take a look around. 
+
 ---
+
 The camera and controlls are exposed to the public network. I disconnected the VPN to see if I could access these devices. The camera's local IP address does not load. The camera and controls were not available over 172.31.3.2. The substations firewall is publically available at https://172.31.3.2.
+
 ---
+
 I then connected back to the vpn and proceeded to login to the pfsense interface. There is a portforwarding rule in place to forward trafic coming in on port 8080 to go to the IP Camera. This makes the IP Camera available at 172.31.3.2:8080.         
 
 
