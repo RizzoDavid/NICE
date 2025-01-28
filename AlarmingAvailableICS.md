@@ -20,21 +20,21 @@ Find out if anything from that substation is publicly exposed and how. Finding o
 Identify the 2 exposed services on substation 434. 
 
 ## Design
-External Network: 172.31.3.0/16 **SPECIAL NOTE:** The IP Range 172.31.3.0/16 is considered a public range
-ISP: 172.31.3.1
-ZAP-HQ: 172.31.3.5
-MY Workstation: 172.31.3.3
-Backup: 172.31.3.4
-Substation 434: 172.31.3.2
+External Network: 172.31.3.0/16 **SPECIAL NOTE:** The IP Range 172.31.3.0/16 is considered a public range  
+ISP: 172.31.3.1  
+ZAP-HQ: 172.31.3.5  
+MY Workstation: 172.31.3.3  
+Backup: 172.31.3.4  
+Substation 434: 172.31.3.2  
 
 ---
 
-Internal Substation Network: 192.168.30.0/24
-pfSense: 192.168.30.254
-Historian: 192.168.30.77
-HMI: 192.168.30.16
-IP Camera: 192.168.30.32
-Sensors & Equipment: 192.168.30.2
+Internal Substation Network: 192.168.30.0/24  
+pfSense: 192.168.30.254  
+Historian: 192.168.30.77  
+HMI: 192.168.30.16  
+IP Camera: 192.168.30.32  
+Sensors & Equipment: 192.168.30.2  
 
 
 ## Implementation
